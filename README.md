@@ -46,8 +46,10 @@ Lösungsansätze:
   - JS Library
     - ```npm install selenium-webdriver``` (mind. Node 14.20.0)
   - Browser-spezifischer WebDriver
-    - Chrome
+    - Chrome 
+      - Auf Mac muss chromedriver als sichere Quelle gesetzt werden: ```xattr -d com.apple.quarantine chromedriver``` (danach ```./chromedriver``` ausführen)
     - Safari
+      - Auf Mac vorinstalliert
 - IDE
   - [https://www.selenium.dev/selenium-ide/](https://www.selenium.dev/selenium-ide/)
 
