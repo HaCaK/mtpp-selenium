@@ -47,10 +47,12 @@ Lösungsansätze:
     - ```npm install selenium-webdriver``` (mind. Node 14.20.0)
   - Browser-spezifischer WebDriver
     - Chrome 
-      - Auf Mac muss chromedriver als sichere Quelle gesetzt werden: ```xattr -d com.apple.quarantine chromedriver``` (danach ```./chromedriver``` ausführen)
+      - Auf Mac muss chromedriver als sichere Quelle gesetzt werden: ```xattr -d com.apple.quarantine chromedriver```
+      - Ausführbar machen: ```chmod +x chromedriver```  
+      - In einen Ordner im PATH kopieren: ```sudo mv chromedriver /usr/local/bin/```
     - Safari
       - Auf Mac vorinstalliert
-      - In Safari: Preferences -> Advanced -> "Show develop menu in menu bar" -> Develop -> "Allow Remote Automation" 
+      - In Safari: Preferences → Advanced → "Show develop menu in menu bar" → Develop → "Allow Remote Automation" 
 - IDE
   - [https://www.selenium.dev/selenium-ide/](https://www.selenium.dev/selenium-ide/)
 
