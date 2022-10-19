@@ -50,6 +50,7 @@ Lösungsansätze:
       - Auf Mac muss chromedriver als sichere Quelle gesetzt werden: ```xattr -d com.apple.quarantine chromedriver``` (danach ```./chromedriver``` ausführen)
     - Safari
       - Auf Mac vorinstalliert
+      - In Safari: Preferences -> Advanced -> "Show develop menu in menu bar" -> Develop -> "Allow Remote Automation" 
 - IDE
   - [https://www.selenium.dev/selenium-ide/](https://www.selenium.dev/selenium-ide/)
 
