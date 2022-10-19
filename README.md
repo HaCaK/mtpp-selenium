@@ -17,11 +17,11 @@
 
 Beispiel:
 
-- Honig-Shop
+- [Selenium Playground](https://www.selenium.dev/selenium/web/web-form.html) ODER React Honig-Shop 
 
 Problem:
 
-- Testen, dass Hoch- und Runterzählen vom ItemCount über Buttons funktioniert
+- Verschiedene UI-Komponenten testen
 
 Lösungsansätze:
 
