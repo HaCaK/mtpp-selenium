@@ -56,7 +56,13 @@ Lösungsansätze:
 - IDE
   - [https://www.selenium.dev/selenium-ide/](https://www.selenium.dev/selenium-ide/)
 
-## 5. Anwendungsbeispiel (aus Einstieg)
+## 5. Hands-On
+
+- Initiales Script **→ https://github.com/SeleniumHQ/seleniumhq.github.io/blob/trunk/examples/javascript/test/getting_started/firstScript.spec.js
+
+Zeile 16-31 Live Tippen/Erklären
+
+## 6. Anwendungsbeispiel (aus Einstieg)
 
 - Git Repo auschecken **→ TODO: Git Repo mit Branches für Aufgaben erstellen**
 
@@ -75,7 +81,7 @@ Lösungsansätze:
 | Deaktivierung des "Bezahlen"-Buttons bei Stückzahl \< 5                   | **TODO**                                             |
 | Konsolenausgabe des Betrags und der Stückzahl nach Absenden des Formulars |
 
-## 6. Ausblick
+## 7. Ausblick
 
 - Zusammenfassung
   - Wofür wird Selenium verwendet
@@ -85,7 +91,7 @@ Lösungsansätze:
 |---------------|--------------------------|-----------------|
 | **TODO**      |
 
-## 7. Abschluss
+## 8. Abschluss
 
 - Erwartungen erfüllt
 - Feedback
