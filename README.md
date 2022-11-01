@@ -58,7 +58,7 @@ Lösungsansätze:
 
 ## 5. Hands-On
 
-- Initiales Script **→ https://github.com/SeleniumHQ/seleniumhq.github.io/blob/trunk/examples/javascript/test/getting_started/firstScript.spec.js
+- Initiales Script → https://github.com/SeleniumHQ/seleniumhq.github.io/blob/trunk/examples/javascript/test/getting_started/firstScript.spec.js
 
 Zeile 16-31 Live Tippen/Erklären
 
