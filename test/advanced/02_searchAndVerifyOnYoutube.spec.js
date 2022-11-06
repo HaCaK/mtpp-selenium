@@ -18,7 +18,7 @@ suite(function () {
         await driver.get('https://www.youtube.com');
 
         await new Promise(r => setTimeout(r, 2000));
-        
+
         let consentButton = await driver.findElement(By.xpath("//div[@id='content']/div[2]/div[6]/div/ytd-button-renderer/yt-button-shape/button/yt-touch-feedback-shape/div/div[2]"));
         await consentButton.click();
 
@@ -38,7 +38,7 @@ suite(function () {
         await new Promise(r => setTimeout(r, 2000));
 
         let urlToVideo = await driver.getCurrentUrl();
-        assert.equal("https://www.youtube.com/watch?v=vRvJwlWkD2Y",urlToVideo)
+        assert.equal(urlToVideo,"https://www.youtube.com/watch?v=vRvJwlWkD2Y")
 
         let viewsInfo = await driver.findElement(By.xpath("//*[@id='info']/span[1]")).getText();
         let views = viewsInfo.split(" ")[0];
