@@ -17,19 +17,7 @@
 
 Beispiel:
 
-- [Selenium Playground](https://www.selenium.dev/selenium/web/web-form.html) ODER React Honig-Shop 
-
-Problem:
-
-- Verschiedene UI-Komponenten testen
-
-Lösungsansätze:
-
-- Manuell → Gemeinsam erarbeiten, wie die Anforderung manuell getestet werden kann
-
-- Automatisiert mit Selenium → Test Case laufen lassen (jeden Button einmal klicken und itemCount prüfen → Test schlägt fehl)
-
-- Button Funktion einbauen → Test läuft durch → kein weiteres manuelles Testen notwendig → kann automatisiert werden
+- [Selenium Playground](https://www.selenium.dev/selenium/web/web-form.html)
 
 ## 3. Komponenten
 
@@ -64,28 +52,16 @@ Zeile 16-31 Live Tippen/Erklären
 
 ## 6. Anwendungsbeispiel (aus Einstieg)
 
-- Git Repo auschecken **→ TODO: Git Repo mit Branches für Aufgaben erstellen**
-
-- Gemeinsam Testfälle definieren
-
 - In Einzelarbeit Testfälle umsetzen und Anforderungen implementieren
 
 → zuerst mit Builder API schreiben, danach mit Browser IDE live aufnehmen → je nach Geschwindigkeit der Gruppe
-
-| **Funktionsanforderung**                                                  | **Testfälle**                                        |
-|---------------------------------------------------------------------------|------------------------------------------------------|
-| Manipulation der Stückzahl durch Buttons                                  | - Klick auf "+"-Button erhöht die Stückzahl um 1     |
-|                                                                           | - Klick auf "-"-Button verringert die Stückzahl um 1 |
-| Deaktivierung des "-"-Buttons bei Stückzahl \< 1                          | - "-"-Button initial deaktiviert                     |
-|                                                                           | - 1 Klick auf +, 2 Klicks auf -                      |
-| Deaktivierung des "Bezahlen"-Buttons bei Stückzahl \< 5                   | **TODO**                                             |
-| Konsolenausgabe des Betrags und der Stückzahl nach Absenden des Formulars |
 
 ## 7. Ausblick
 
 - Zusammenfassung
   - Wofür wird Selenium verwendet
-  - Entscheidungsmatrix Builder API vs Browser IDE (wenn leicht zu finden mit Gruppe erarbeiten, sonst vorausgefüllt)
+  - Entscheidungsmatrix Builder API vs Browser IDE
+    - Mit Gruppe nach Bearbeitung der Aufgaben erarbeiten
 
 | **Kriterien** | **Selenium Builder API** | **Browser IDE** |
 |---------------|--------------------------|-----------------|
