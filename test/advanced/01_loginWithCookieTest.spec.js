@@ -13,11 +13,13 @@ suite(function () {
     after(async () => await driver.quit());
 
     it("Fill W3Schools login form after closing cookie popup", async function () {
-      this.timeout(6000);
+      this.timeout(60000);
 
       await driver.get(
         "https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form_modal"
       );
+
+      await new Promise(r => setTimeout(r, 2000));
       let consentButton = await driver.findElement(
         By.xpath("/html/body/div[5]/div/div/div/div[3]/div[2]/div[2]")
       );
@@ -25,10 +27,14 @@ suite(function () {
 
       await driver.switchTo().frame("iframeResult");
 
+      await new Promise(r => setTimeout(r, 2000));
+
       let loginFormButton = await driver.findElement(
         By.xpath("/html/body/button")
       );
       await loginFormButton.click();
+
+      await new Promise(r => setTimeout(r, 2000));
 
       let userInput = await driver.findElement(By.name("uname"));
       let pwInput = await driver.findElement(By.name("psw"));
@@ -37,13 +43,15 @@ suite(function () {
       const user = "testuser";
       const pw = "testpw";
 
+      await new Promise(r => setTimeout(r, 2000));
       await userInput.sendKeys(user);
       await pwInput.sendKeys(pw);
       await loginButton.click();
 
+      await new Promise(r => setTimeout(r, 2000));
       let result = await driver.findElement(By.xpath("/html/body/div[1]"));
       let text = await result.getText();
-
+      
       assert.equal(text, "uname=testuser&psw=testpw&remember=on ");
     });
   });
