@@ -2,10 +2,10 @@
   "id": "0b1c46bd-a8cd-4775-8d93-045bc403bbeb",
   "version": "2.0",
   "name": "Workshop Selenium Demo",
-  "url": "https://www.selenium.dev",
+  "url": "https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form_modal",
   "tests": [{
     "id": "72b582a9-17cd-4d71-a0b5-52c9df7bdd51",
-    "name": "First Test",
+    "name": "basic_03_fillSimpleFormTest",
     "commands": [{
       "id": "c6f1542a-398e-498a-8d35-f7be034dd012",
       "comment": "",
@@ -87,6 +87,186 @@
       "targets": [],
       "value": "Received!"
     }]
+  }, {
+    "id": "1169a1b1-774a-4d21-bde2-d0dfa65fb656",
+    "name": "basic_02_clickElementTest",
+    "commands": [{
+      "id": "ad961370-4b6d-45b6-aff0-f0d455ddd47d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "337c3893-5ca7-456b-913b-061a397aa563",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x970",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c9849d5-be3f-4e31-b98d-1a9cd6526637",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tutorials",
+      "targets": [
+        ["linkText=Tutorials", "linkText"],
+        ["css=.large-horizontal > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Tutorials')]", "xpath:link"],
+        ["xpath=//div[@id='header-menu']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/tutorials/')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tutorials')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a51ded48-7781-4f13-9d0a-7dedda1e4938",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "currentUrl"
+    }, {
+      "id": "be133f8e-5453-4bf8-98f1-23a8277579a8",
+      "comment": "",
+      "command": "assert",
+      "target": "currentUrl",
+      "targets": [],
+      "value": "https://www.visual-paradigm.com/tutorials/"
+    }]
+  }, {
+    "id": "e78eb827-f235-4493-90c5-4d723d8d353e",
+    "name": "basic_01_verifyPageTitleTest",
+    "commands": [{
+      "id": "cd8589a0-5f29-48ef-afeb-a98eb1080c83",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b535d75-e365-424d-99de-9110e34a05aa",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "title"
+    }, {
+      "id": "7104f70a-28b1-4215-b353-0952af661964",
+      "comment": "",
+      "command": "assert",
+      "target": "title",
+      "targets": [],
+      "value": "Google"
+    }]
+  }, {
+    "id": "96bf7aa2-3228-4daf-b4d7-3499b2104476",
+    "name": "advanced_01_loginWithCookieTest",
+    "commands": [{
+      "id": "e9873431-9631-4e8d-b9e6-92aea38c2623",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form_modal",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10f1db08-7bb1-403d-880e-beac23d24698",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x970",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9899215f-87a8-4596-832c-e11a82173438",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "45ede897-bc86-4b67-a460-f71fc668bae1",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(2)",
+      "targets": [
+        ["css=button:nth-child(2)", "css:finder"],
+        ["xpath=//button[@onclick=\"document.getElementById('id01').style.display='block'\"]", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aff9c39f-4cac-4de4-9232-c47c1c2d02cc",
+      "comment": "",
+      "command": "click",
+      "target": "name=uname",
+      "targets": [
+        ["name=uname", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname']", "xpath:attributes"],
+        ["xpath=//div[@id='id01']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "092b7b6b-a411-455d-8fee-228a6912fffe",
+      "comment": "",
+      "command": "type",
+      "target": "name=uname",
+      "targets": [
+        ["name=uname", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname']", "xpath:attributes"],
+        ["xpath=//div[@id='id01']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testuser"
+    }, {
+      "id": "01fef3dd-51f0-4bc8-b71e-be571f123600",
+      "comment": "",
+      "command": "type",
+      "target": "name=psw",
+      "targets": [
+        ["name=psw", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='psw']", "xpath:attributes"],
+        ["xpath=//div[@id='id01']/form/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "testpw"
+    }, {
+      "id": "7d573f39-bfbe-44e9-a0a8-c160c05e82eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(5)",
+      "targets": [
+        ["css=button:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='id01']/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f1c7f39-5e00-4648-8700-da0961f5784b",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.w3-large",
+      "targets": [
+        ["css=.w3-large", "css:finder"],
+        ["xpath=//div[3]", "xpath:position"],
+        ["xpath=//div[contains(.,'uname=testuser&psw=testpw&remember=on ')]", "xpath:innerText"]
+      ],
+      "value": "resultText"
+    }, {
+      "id": "8ef7c033-42ac-450c-bff9-82741ff68ba7",
+      "comment": "",
+      "command": "assert",
+      "target": "resultText",
+      "targets": [],
+      "value": "uname=testuser&psw=testpw&remember=on "
+    }]
   }],
   "suites": [{
     "id": "64e7d138-83aa-44c9-92ac-31b85ae0d3a5",
@@ -96,6 +276,6 @@
     "timeout": 300,
     "tests": ["72b582a9-17cd-4d71-a0b5-52c9df7bdd51"]
   }],
-  "urls": ["https://www.selenium.dev/"],
+  "urls": ["https://www.selenium.dev/", "https://www.visual-paradigm.com/", "https://www.google.de/", "https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form_modal"],
   "plugins": []
 }
