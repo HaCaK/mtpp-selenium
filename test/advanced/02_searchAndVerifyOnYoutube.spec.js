@@ -25,7 +25,7 @@ suite(function () {
         await new Promise(r => setTimeout(r, 2000));
 
         let searchInput = await driver.findElement(By.name('search_query'));
-        await searchInput.sendKeys('Master professional Software Egineering');
+        await searchInput.sendKeys('Master Professional Software Engineering');
 
         let searchButton = await driver.findElement(By.id('search-icon-legacy'));
         await searchButton.click();
@@ -42,9 +42,9 @@ suite(function () {
 
         let viewsInfo = await driver.findElement(By.xpath("//*[@id='info']/span[1]")).getText();
         let views = viewsInfo.split(" ")[0];
-        
-        assert(views > 7000);
-        
+        let viewsWithoutK = views.split("K")[0];
+
+        assert(viewsWithoutK > 7000 || viewsWithoutK > 7);
     });
   });
 });
