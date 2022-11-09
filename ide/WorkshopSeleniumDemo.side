@@ -10,7 +10,7 @@
       "id": "c6f1542a-398e-498a-8d35-f7be034dd012",
       "comment": "",
       "command": "open",
-      "target": "/selenium/web/web-form.html",
+      "target": "https://www.selenium.dev/selenium/web/web-form.html",
       "targets": [],
       "value": ""
     }, {
@@ -94,7 +94,7 @@
       "id": "ad961370-4b6d-45b6-aff0-f0d455ddd47d",
       "comment": "",
       "command": "open",
-      "target": "/",
+      "target": "https://www.visual-paradigm.com/tutorials/",
       "targets": [],
       "value": ""
     }, {
@@ -141,7 +141,7 @@
       "id": "cd8589a0-5f29-48ef-afeb-a98eb1080c83",
       "comment": "",
       "command": "open",
-      "target": "/",
+      "target": "https://www.google.de",
       "targets": [],
       "value": ""
     }, {
