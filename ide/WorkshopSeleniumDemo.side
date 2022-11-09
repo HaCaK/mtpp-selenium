@@ -267,6 +267,150 @@
       "targets": [],
       "value": "uname=testuser&psw=testpw&remember=on "
     }]
+  }, {
+    "id": "211a850e-3ae3-43db-ad75-cd510200837d",
+    "name": "advanced_02_searchAndVerifyOnYoutube",
+    "commands": [{
+      "id": "1f4cf21a-991b-4d29-805b-cc1963f1fe56",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.youtube.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7102907e-a9f3-4f73-ba1b-dc63bca33069",
+      "comment": "",
+      "command": "click",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6151d4f1-53ff-4735-a143-a186f4c4b5a1",
+      "comment": "",
+      "command": "type",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "master professional software engineering"
+    }, {
+      "id": "7f224f1c-072f-4b5e-9950-e973cc546edc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#search-icon-legacy > .style-scope:nth-child(1)",
+      "targets": [
+        ["css=#search-icon-legacy > .style-scope:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='search-icon-legacy']/yt-icon", "xpath:idRelative"],
+        ["xpath=//ytd-searchbox/button/yt-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12da1a82-0f9b-4901-864e-79ff02998e24",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytd-item-section-renderer:nth-child(1) > #dismissible #thumbnail #img",
+      "targets": [
+        ["css=.ytd-item-section-renderer:nth-child(1) > #dismissible #thumbnail #img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://i.ytimg.com/vi/vRvJwlWkD2Y/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBJJZ292HEKNS8XTS_9zcuE-Fz6mA')]", "xpath:img"],
+        ["xpath=(//img[@id='img'])[76]", "xpath:attributes"],
+        ["xpath=(//a[@id='thumbnail']/yt-img-shadow/img)[42]", "xpath:idRelative"],
+        ["xpath=//ytd-video-renderer/div/ytd-thumbnail/a/yt-img-shadow/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a90ff82-c1ba-45c2-99e7-ec7a861fae2e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "currentUrl"
+    }, {
+      "id": "856d7a97-88e0-4c92-84d2-da98cbf0870c",
+      "comment": "",
+      "command": "assert",
+      "target": "currentUrl",
+      "targets": [],
+      "value": "https://www.youtube.com/watch?v=vRvJwlWkD2Y"
+    }, {
+      "id": "d1fde0cd-1907-4a0e-b718-183071d502c6",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=#info > .yt-formatted-string:nth-child(1)",
+      "targets": [
+        ["css=#info > .yt-formatted-string:nth-child(1)", "css:finder"],
+        ["xpath=//yt-formatted-string[@id='info']/span", "xpath:idRelative"],
+        ["xpath=//div/div/div/yt-formatted-string/span", "xpath:position"]
+      ],
+      "value": "viewInfo"
+    }, {
+      "id": "79dc7913-e812-4db8-b2fb-6dcd0db1d1a9",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${viewInfo}.split(\" \")[0] > 7000",
+      "targets": [],
+      "value": "viewsGreaterThan"
+    }, {
+      "id": "7959bbb3-745f-442c-acdf-1b60cd09f972",
+      "comment": "",
+      "command": "assert",
+      "target": "viewsGreaterThan",
+      "targets": [],
+      "value": "true"
+    }]
+  }, {
+    "id": "0bc6aa39-575c-445f-a622-6ab2788debf4",
+    "name": "advanced_03_checkSocialLinksKFRU",
+    "commands": [{
+      "id": "3fd706ad-b27c-4554-bf08-69b2573ec645",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.weiterbildung-reutlingen-university.de/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27459688-a302-48ab-86ff-cabdc0fa440d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon--social-instagram > svg",
+      "targets": [
+        ["css=.icon--social-instagram > svg", "css:finder"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win121",
+      "windowTimeout": 2000
+    }, {
+      "id": "62cff24c-94c4-4e96-83a1-78c435dc31ec",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win121}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3013cd3d-fe9c-42a2-96d3-c4bae79d45dc",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "currentUrl"
+    }, {
+      "id": "c8b9b793-16ec-4412-afdf-84afa6e6c692",
+      "comment": "",
+      "command": "assert",
+      "target": "currentUrl",
+      "targets": [],
+      "value": "https://www.instagram.com/kfru_reutlingen/"
+    }]
   }],
   "suites": [{
     "id": "64e7d138-83aa-44c9-92ac-31b85ae0d3a5",
