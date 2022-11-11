@@ -15,6 +15,7 @@ suite(function () {
     it("Fill W3Schools login form after closing cookie popup", async function () {
       this.timeout(60000);
 
+      // await driver.manage().setTimeouts({ implicit: 500 }); 
       await driver.get(
         "https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form_modal"
       );
